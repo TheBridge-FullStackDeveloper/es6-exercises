@@ -1,16 +1,17 @@
-const rectangleArea = /* Añade tu código aquí */;
+const rectangleArea = (largo, ancho) => ancho * largo;
 
-const greet = (nombre) => /* Añade tu código aquí */;
+const greet = (nombre) => `Hola, ${nombre}!`;
 
-const mergeArray = (arr1, arr2) => /* Añade tu código aquí */;
+const mergeArray = (arr1, arr2) => [...arr1, ...arr2];
 
-const ducplicateAndSum = (a, b, /* Añade tu código aquí */) => {
+const ducplicateAndSum = (a, b, ...rest) => {
   const suma = a + b;
-  return numeros.map((numero) => numero + suma);
+  return rest.map((numero) => numero + suma);
 };
 
 const setExercise = () => {
-  /* Añade tu código aquí */
+  const mySet = new Set([1,2,4,2,3,4,2,5])
+  return mySet.size
 };
 
 const miMapa = new Map();
@@ -19,7 +20,10 @@ miMapa.set("edad", 30);
 miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
-  /* Añade tu código aquí */
+  miMapa.set("profesion", "Programador");
+  miMapa.delete("edad"); 
+
+  return miMapa
 };
 
 const countRepeated = (string) => {
