@@ -1,4 +1,4 @@
-const rectangleArea = /* Añade tu código aquí */;
+const rectangleArea = (largo, ancho) => largo*ancho;
 
 const greet = (nombre) => /* Añade tu código aquí */;
 
