@@ -1,6 +1,6 @@
 const rectangleArea = (largo, ancho) => largo*ancho;
 
-const greet = (nombre) => /* Añade tu código aquí */;
+const greet = (nombre) => `Hola ${nombre}!`;
 
 const mergeArray = (arr1, arr2) => /* Añade tu código aquí */;
 
