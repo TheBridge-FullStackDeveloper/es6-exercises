@@ -10,7 +10,16 @@ const ducplicateAndSum = (a, b, ...numeros) => {
 }
 
 const setExercise = () => {
-  /* Añade tu código aquí */
+  const set = new Set([1,2,3,3,4,4,4,5,5,5]);
+  const finalSet = new Set();
+
+  set.array.forEach(element => {
+    if (!finalSet.has(element)) {
+      finalSet.add(element);
+    }
+  });
+
+  return finalSet.size;
 };
 
 const miMapa = new Map();
