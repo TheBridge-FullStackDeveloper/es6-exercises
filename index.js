@@ -18,7 +18,6 @@ const setExercise = () => {
       finalSet.add(element);
     }
   });
-
   return finalSet.size;
 };
 
@@ -35,5 +34,15 @@ const mapExercise = () => {
 };
 
 const countRepeated = (string) => {
-  /* Añade tu código aquí */
+  const map = new Map();
+  for (let index = 0; index < string.length; index++) {
+    const element = string[index];
+    if (map.has(element)) {
+      map.set(element, map.get(element)+1)
+    } else {
+      map.set(element, 1);
+    }
+  } 
+
+  return map;
 };
