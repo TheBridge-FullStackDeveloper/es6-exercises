@@ -1,16 +1,24 @@
-const rectangleArea = /* Añade tu código aquí */;
+const rectangleArea = (largo, ancho) => largo*ancho;
 
-const greet = (nombre) => /* Añade tu código aquí */;
+const greet = (nombre) => `Hola, ${nombre}!`;
 
-const mergeArray = (arr1, arr2) => /* Añade tu código aquí */;
+const mergeArray = (arr1, arr2) => [...arr1, ...arr2]
 
-const ducplicateAndSum = (a, b, /* Añade tu código aquí */) => {
+const ducplicateAndSum = (a, b, ...numeros) => {
   const suma = a + b;
   return numeros.map((numero) => numero + suma);
-};
+}
 
 const setExercise = () => {
-  /* Añade tu código aquí */
+  const set = new Set([1,2,3,3,4,4,4,5,5,5]);
+  const finalSet = new Set();
+
+  set.forEach(element => {
+    if (!finalSet.has(element)) {
+      finalSet.add(element);
+    }
+  });
+  return finalSet.size;
 };
 
 const miMapa = new Map();
@@ -19,9 +27,22 @@ miMapa.set("edad", 30);
 miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
-  /* Añade tu código aquí */
+  miMapa.set("profesion", "Ingeniero de Software");
+  miMapa.delete("edad");
+
+  return miMapa;
 };
 
 const countRepeated = (string) => {
-  /* Añade tu código aquí */
+  const map = new Map();
+  for (let index = 0; index < string.length; index++) {
+    const element = string[index];
+    if (map.has(element)) {
+      map.set(element, map.get(element)+1)
+    } else {
+      map.set(element, 1);
+    }
+  } 
+
+  return map;
 };
