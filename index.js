@@ -20,12 +20,24 @@ miMapa.set("edad", 30);
 miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
-  miMapa.set("profesion", "Programador");
+  miMapa.set("profesion", "Ingeniero de Software");
   miMapa.delete("edad"); 
 
   return miMapa
 };
 
 const countRepeated = (string) => {
-  /* Añade tu código aquí */
+
+const myMap = new Map();
+
+  for (i = 0; i < string.length; i++){
+
+    if (!myMap.has(string[i])){
+      myMap.set( string[i] , 1 )
+    }else {
+      let repit = myMap.get(string[i])
+      myMap.set(string[i], repit + 1)
+    };
+  }
+  return myMap
 };
