@@ -28,7 +28,7 @@ miMapa.set("edad", 30);
 miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
-  miMapa.set("profesion", "Carpintero");
+  miMapa.set("profesion", "Ingeniero de Software");
   miMapa.delete("edad");
 
   return miMapa;
