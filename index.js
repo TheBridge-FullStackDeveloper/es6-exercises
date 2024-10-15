@@ -1,6 +1,6 @@
 const rectangleArea = (largo, ancho) => largo*ancho;
 
-const greet = (nombre) => `Hola ${nombre}!`;
+const greet = (nombre) => `Hola, ${nombre}!`;
 
 const mergeArray = (arr1, arr2) => [...arr1, ...arr2]
 
@@ -28,7 +28,10 @@ miMapa.set("edad", 30);
 miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
-  /* Añade tu código aquí */
+  miMapa.set("profesion", "Carpintero");
+  miMapa.delete("edad");
+
+  return miMapa;
 };
 
 const countRepeated = (string) => {
