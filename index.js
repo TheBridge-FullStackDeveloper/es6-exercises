@@ -10,6 +10,7 @@ const ducplicateAndSum = (a, b, /* Añade tu código aquí */) => {
 };
 
 const setExercise = () => {
+  const miSet = new Set([1, 2, 3, 3, 4, 5]);
   /* Añade tu código aquí */
 };
 
