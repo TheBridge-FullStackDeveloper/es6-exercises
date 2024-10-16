@@ -1,10 +1,10 @@
-const rectangleArea = /* Añade tu código aquí */;
+const rectangleArea = (largo, ancho) => largo * ancho;
 
-const greet = (nombre) => /* Añade tu código aquí */;
+const greet = (nombre) => `Hola, ${nombre}!`;
 
-const mergeArray = (arr1, arr2) => /* Añade tu código aquí */;
+const mergeArray = (arr1, arr2) => [...arr1, ...arr2];
 
-const ducplicateAndSum = (a, b, /* Añade tu código aquí */) => {
+const ducplicateAndSum = (a, b, ...numeros) => {
   const suma = a + b;
   return numeros.map((numero) => numero + suma);
 };
