@@ -22,12 +22,13 @@ miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
   /* Añade tu código aquí */
-  miMapa.set("profession", "Ingeniero de Software")
+  miMapa.set("profession", "Ingeniero de Software");
   miMapa.delete("edad");
   return miMapa
 };
 
 const countRepeated = (string) => {
   /* Añade tu código aquí */
-  
+  const repeat = new Map();
+  //for(i=0; i<string.length; i++){}
 };
