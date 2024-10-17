@@ -11,6 +11,8 @@ const ducplicateAndSum = (a, b, ...numeros) => {
 
 const setExercise = () => {
   /* Añade tu código aquí */
+  const miSet = new Set([1, 2, 2, 3, 3, 4, 5]);
+  return miSet.size 
 };
 
 const miMapa = new Map();
@@ -20,8 +22,12 @@ miMapa.set("profesion", "Desarrollador");
 
 const mapExercise = () => {
   /* Añade tu código aquí */
+  miMapa.set("profession", "Ingeniero de Software")
+  miMapa.delete("edad");
+  return miMapa
 };
 
 const countRepeated = (string) => {
   /* Añade tu código aquí */
+  
 };
